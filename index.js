@@ -6,6 +6,7 @@ const wed_pack_router = require("./Routes/wedding-pack-route");
 const wed_serve_location_router = require("./Routes/wed_serve_location");
 const facilties_and_services_router = require("./Routes/facilites_services");
 const category_router = require("./Routes/Category");
+const image_to_gallery_router = require("./Routes/saveGalleryImages");
 require("dotenv").config({
   path: "./applicationProperties.env",
 });
@@ -19,6 +20,7 @@ app.use("/", wed_pack_router);
 app.use("/", wed_serve_location_router);
 app.use("/", facilties_and_services_router);
 app.use("/", category_router);
+app.use("/", image_to_gallery_router);
 /* API ENPOINTS */
 
 /* --------------------------------------------------------------------------------------------------- */
